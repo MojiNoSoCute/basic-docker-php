@@ -33,8 +33,11 @@
     
         <div class="card shadow-sm">
             <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                <h4 class="mb-0">แสดงข้อมูล (PDO)</h4>
-                <span class="badge bg-light text-dark">ทั้งหมด <?= count($result); ?> รายการ</span>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="index.php" class="btn btn-outline-light btn-sm">&larr; กลับหน้าแรก</a>
+                    <h4 class="mb-0">แสดงข้อมูล (PDO)</h4>
+                </div>
+                <span class="badge bg-light text-dark fs-6">ทั้งหมด <?= number_format(count($result)); ?> รายการ</span>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
